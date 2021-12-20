@@ -2106,7 +2106,7 @@ class JMVoiceMessage extends JMNormalMessage {
 }
 
 class JMImageMessage extends JMNormalMessage {
-  String thumbPath; // 图片的缩略图路径, 如果为空需要调用相应下载方法
+  String? thumbPath; // 图片的缩略图路径, 如果为空需要调用相应下载方法
 
   Map toJson() {
     var json = super.toJson();
