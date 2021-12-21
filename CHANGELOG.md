@@ -1,3 +1,5 @@
+## 2.2.1
++适配创建消息 null safety
 ## 2.2.0
 +修复  enterChatRoom getChatRoomConversation 方法
 ## 2.1.9

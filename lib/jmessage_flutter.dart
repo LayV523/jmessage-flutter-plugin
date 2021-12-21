@@ -2089,8 +2089,8 @@ class JMTextMessage extends JMNormalMessage {
 }
 
 class JMVoiceMessage extends JMNormalMessage {
-  String path; // 语音文件路径,如果为空需要调用相应下载方法，注意这是本地路径，不能是 url
-  num duration; // 语音时长，单位秒
+  String? path; // 语音文件路径,如果为空需要调用相应下载方法，注意这是本地路径，不能是 url
+  num? duration; // 语音时长，单位秒
 
   Map toJson() {
     var json = super.toJson();
