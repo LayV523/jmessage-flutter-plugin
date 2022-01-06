@@ -18,6 +18,9 @@ rootProject.allprojects {
         mavenCentral()
         google()
         jcenter()
+        flatDir {
+            dirs project(':jmessage_flutter').file('libs')
+        }
     }
 }
 
@@ -35,8 +38,14 @@ android {
         disable 'InvalidPackage'
     }
 }
-
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
 dependencies {
     implementation 'cn.jiguang.sdk:jmessage:2.9.2'
-    implementation 'cn.jiguang.sdk:jcore:2.8.2'
+//    implementation 'cn.jiguang.sdk:jcore:2.8.2'
+    implementation(name: 'jcore-android-3.1.2-google_play', ext: 'jar')
+
 }
